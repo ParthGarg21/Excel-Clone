@@ -123,6 +123,10 @@ function updateValuesKahnsAlgo() {
     const cidx = src % cols;
 
     const expression = valueFormulaMat[ridx][cidx].formula;
+    
+    if (expression == "") {
+       continue;
+    }
 
     const val = getValue(expression);
 
