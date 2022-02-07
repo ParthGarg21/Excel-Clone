@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.heading-con {
+  background-color: #218c74;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f1f2f6;
+  font-size: 1.25rem;
+}
+
+.menu-bar {
+  background-color: #218c74;
+  height: 5vh;
+  display: flex;
+  color: #f1f2f6;
+}
+
+#file {
+  background-color: #f1f2f6;
+  color: #218c74;
+}
+
+.file-options {
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transition: all;
+  transition-duration: 0.25s;
+}
+
+.file-options:hover {
+  background-color: #f1f2f6;
+  color: #218c74;
+}
+
+.options {
+  background-color: #f1f2f6;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+}
+
+.options select {
+  border: 1px solid;
+  margin: 0 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.options i {
+  cursor: pointer;
+  padding: 0 1rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.opt-icn {
+  transition: all;
+  transition-duration: 0.25s;
+}
+
+.opt-icn:hover {
+  background-color: #747d8c;
+}
+
+.selected-opt {
+  background-color: #747d8c;
+}
+
+#monospace {
+  font-family: monospace;
+}
+
+#serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#sans-serif {
+  font-family: sans-serif;
+}
+
+#cursive {
+  font-family: cursive;
+}
+
+#fantasy {
+  font-family: cursive;
+}
+
+.color-div {
+  position: relative;
+  height: 100%;
+}
+
+input[type="color"] {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+}
+
+.formula-bar {
+  background-color: #f1f2f6;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+}
+
+.formula-item {
+  height: 60%;
+}
+
+.cell-display {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  width: 10%;
+  height: 60%;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.formula {
+  outline: none;
+  border-radius: 0.25rem;
+  width: 90%;
+  height: 60%;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 1.125rem;
+  /* background-color: #fff; */
+}
+
+.main-con {
+  height: 70vh;
+  background-color: #f1f2f6;
+  overflow: scroll;
+}
+
+.main-con-div {
+  display: flex;
+}
+
+.con1 {
+  height: 4.5vh;
+}
+
+.blank-box {
+  min-width: 2.5%;
+  background-color: #747d8c;
+}
+
+.col-head {
+  display: flex;
+}
+
+.con2 {
+  height: 62.5vh;
+}
+
+.row-no {
+  min-width: 2.5%;
+  background-color: #f1f2f6;
+}
+
+.sheets {
+  color: #218c74;
+  background-color: #f1f2f6;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.add-sheet {
+  cursor: pointer;
+  padding: 0 1rem;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+}
+
+.sheets-con {
+  /* background-color: white; */
+  height: 75%;
+  width: 90%;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.sheet {
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+}
+
+.cell-ht {
+  height: 4.5vh;
+}
+
+.cell-wt {
+  width: 8rem;
+}
+
+.border {
+  border: 1px solid #747d8c;
+}
+
+.cell {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.act-cell {
+  font-family: monospace;
+  outline: none;
+  font-size: 16px;
+}
+
+.excel-row {
+  height: 4.5vh;
+  display: flex;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.active-cell {
+  background-color: #c3c3c3;
+  border: 2px solid;
+}
+
+.path {
+  background-color: #a86cf2 !important;
+}
+
+::placeholder {
+  font-weight: 400;
+  color: #bebebe;
+}
